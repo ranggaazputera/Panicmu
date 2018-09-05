@@ -1,0 +1,1619 @@
+*{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+}
+
+.clear{
+	clear: both;
+}
+
+.wow{
+	visibility: hidden;
+}
+
+/* back to top button (start) */
+
+#back-to-top{
+	position: fixed;
+    bottom: 30px;
+    right: 35px;
+    background: rgba(241, 72, 77, 0.7);
+    border-radius: 4px;
+    width: 45px;
+    height: 50px;
+    display: none;
+    box-shadow: 0px 0px 4px 1.5px rgba(241, 72, 77, 0.2);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#back-to-top i{
+	position: relative;
+	left: 14px;
+	top: 12px;
+	font-size: 27px;
+	color: #fff;
+	transition: all .2s ease;
+}
+
+#back-to-top:hover{
+	background: #f2565a;
+}
+
+#back-to-top:hover i{
+	top: 5px;
+}
+
+/* back to top button (end) */
+
+/* header (start) */
+
+header .logo{
+	width: 115px;
+}
+
+header .header-menu{
+	line-height: 85px;
+	background: #fff;
+	width: 100%;
+	height: 85px;
+	position: relative;
+	z-index: 99;
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
+	transition: all .3s ease;
+}
+
+header .left{
+	float: left;
+}
+
+header .right{
+	float: right;
+}
+
+/* header menu scroll down (start) */
+
+.header-menu-scroll{
+	position: fixed;
+	line-height: 70px;
+	background: #FFF;
+	width: 100%;
+	height: 70px;
+	z-index: 99;
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
+	transition: all .3s ease;
+}
+
+/* header menu scroll down (start) */
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+header nav ul li a{
+	margin: 0 0 0 27px;
+	font-weight: bold;
+	color: #000;
+	padding: 0 0 20px 0;
+	font-size: 16px;
+	transition: all .2s ease;
+	text-decoration: none;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+ 	overflow: hidden;	  	
+}
+
+header nav ul li a:before{
+  	content: "";
+  	position: absolute;
+  	z-index: -1;
+ 	left: 0;
+  	right: 100%;
+  	bottom: 0;
+  	background: #f2565a;
+  	height: 3px;
+  	-webkit-transition-property: right;
+  	transition-property: right;
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+  	-webkit-transition-timing-function: ease-out;
+  	transition-timing-function: ease-out;
+}
+
+header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active, .active{
+	text-decoration: none;
+	color: #F2565A;
+}
+
+header nav ul li a:hover:before, header nav ul li a:focus:before, header nav ul li a:active:before, .active:before{
+ 	right: 50%;
+}
+
+/* hamburger menu (start) */
+
+.burger {
+	display: none;
+	border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+	border-bottom: 5px solid #000;
+	width: 30px;
+	transform: scale(-1);
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out; 
+}
+
+.burger ::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}	 
+
+.burger:before {
+	content: "";
+	display: block;
+	border-bottom: 5px solid #000;
+	width: 100%;
+	margin-bottom: 7px;
+	transition: transform 0.5s ease-in-out;    
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;        
+}
+
+.burger:after {
+	content: "";
+	display: block;
+	border-bottom: 5px solid #000;
+	width: 100%;
+	margin-bottom: 7px;
+	transition: transform 0.5s ease-in-out;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-menu{
+	display: none;
+}
+
+/* hamburger menu (start) */
+
+header .header-content{
+	clear: both;
+}
+
+header .header-content .slide-pertama{
+	background: url('../img/bg-1.jpg');
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 683px;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -1;
+}
+
+header .header-content{
+	position: relative;
+	bottom: 2px;
+	z-index: 1;
+}
+
+/* slide 1 (start) */
+
+header .header-content .slide-pertama .danger-icon{
+	width: 85px;
+	margin: 0 auto;
+}
+
+header .header-content .slide-pertama .content{
+	padding-top: 238px;
+}
+
+header .header-content .slide-pertama .title{
+	margin-top: 20px;
+}
+
+header .header-content .slide-pertama .title p{
+	color: #fff;
+	font-size: 40px;
+	line-height: 45px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header .header-content .slide-pertama .title span{
+	color: #F9EC60;
+}
+
+header .header-content .slide-pertama .ilustrasi{
+	width: 100%;	
+}
+
+header .header-content .slide-pertama .ilustrasi img{
+	margin-top: 180px;
+}
+
+/* slide 1 (end) */
+
+/* slide 2 (start) */
+
+header .header-content .slide-kedua{
+	background: url('../img/bg-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 683px;
+	z-index: -2;
+}
+
+header .header-content .slide-kedua .title{
+	text-align: center;
+	padding-top: 100px;
+}
+
+header .header-content .slide-kedua .title h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	font-size: 75px;
+	z-index: -1;
+	color: #FFF;
+	text-shadow: 0 8px 0px #F7A29F;
+}
+
+header .header-content .slide-kedua .ilustrasi{
+	width: 550px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 70px;
+}
+
+header .header-content .slide-kedua .ilustrasi img{
+	width: 550px;
+}
+
+/* slide 2 (end) */
+
+/* slide 3 (start) */
+
+header .header-content .slide-ketiga{
+	background: url('../img/bg-3.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 683px;
+}
+
+header .header-content .slide-ketiga .ilustrasi{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+header .header-content .slide-ketiga .ilustrasi img{
+	width: 800px;
+}
+
+/* slide 3 (end) */
+
+/* header (start) */
+
+/* section (start) */
+
+/* APA ITU PANICMU ? (start) */
+
+section #about{
+	background: url('../img/bg-about.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 80px 0;
+}
+
+section .triangle{
+	width: 0;
+	height: 0;
+	border-left: .7rem solid transparent;
+	border-right: .7rem solid transparent;
+	border-top: .7rem solid #F9F9F9;
+	position: absolute;
+	top: 130.5%;
+	left: calc(16.5% - .7rem);
+}
+
+section #about video{
+	box-shadow: -12px -10px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section #about .title h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: 0px 3px 2px #F09AA3;
+}
+
+section #about .title2 h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: 0px 3px 2px #F09AA3;
+}
+
+section #about .borbot{
+	background: #F2565A;
+	width: 50px;
+	height: 4px;
+	margin-top: 20px;
+}
+
+section #about .title2{
+	display: none;
+}
+
+section #about .borbot2{
+	display: none;
+}
+
+section #about .title img{
+	width: 120px;
+}
+
+section #about .content{
+	margin-top: 15px;
+}
+
+section #about .content p{
+	color: #6E6E6E;
+	font-size: 15px;
+}
+
+/* APA ITU PANICMU ? (end) */
+
+/* KENAPA HARUS PANICMU ? (start) */
+
+section #keunggulan .keunggulan-title h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 50px;
+	text-shadow: 0px 3px 2px #F09AA3;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+section #keunggulan .borbot{
+	background: #F2565A;
+	width: 50px;
+	height: 4px;
+	margin-top: 20px;
+	margin: 0 auto;
+}
+
+section #keunggulan .keunggulan-content .icon{
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+section #keunggulan .keunggulan-content .one .icon{
+	width: 210px;
+}
+
+section #keunggulan .keunggulan-content .two .icon{
+	width: 256px;
+}
+
+section #keunggulan .keunggulan-content .three .icon{
+	width: 220px;
+}
+
+section #keunggulan .keunggulan-content .four .icon{
+	width: 295px;
+}
+
+section #keunggulan .keunggulan-content .five .icon{
+	width: 210px;
+}
+
+section #keunggulan .keunggulan-content .six .icon{
+	width: 244px;
+}
+
+section #keunggulan .keunggulan-content .title h4{
+	color: #000;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+section #keunggulan .keunggulan-content .content p{
+	font-size: 15px;
+	color: #6E6E6E;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* KENAPA HARUS PANICMU ? (end) */
+
+/* APA SAJA FITUR PANICMU ? (start) */ 
+
+section #features{
+	margin-top: 80px;
+	background: #F9F9F9;
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+	position: relative;
+	z-index: 1;
+}
+
+section #features .features-title{
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+section #features .features-title h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: 0px 3px 2px #F09AA3;
+}
+
+section #features .features-title .borbot{
+	background: #F2565A;
+	width: 50px;
+	height: 4px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+section #features .bg{
+	margin-top: 20px;
+}
+
+section #features .features-content .bg{
+	background: #FFF;
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: solid 4px #F9737E;
+	box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.05)
+}
+
+section #features .features-content .icon{
+	width: 45px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-right: 17px;
+	height: 200px;
+}
+
+section #features .features-content .title h6{
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+}
+
+section #features .features-content .title{
+	padding-top: 24px;
+}
+
+section #features .features-content .content p{
+	font-size: 15px;
+	color: #6E6E6E;
+	margin-right: 10px;
+}
+
+/* APA SAJA FITUR PANICMU ? (end) */
+
+/* APA KATA MEREKA TENTANG PANICMU ? (start) */
+
+section #testimoni{
+	background: #FFE9EB;
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+}
+
+section #testimoni .title{
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+section #testimoni .title h3{
+	color: #F15759;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+section #testimoni .title h3:before{
+	content: '“';
+	position: absolute;
+	left: 10%;
+	color: #FEBEBF;
+	font-size: 150px;
+}
+
+section #testimoni .title h3:after{
+	content: '“';
+	position: absolute;
+	right: 10%;
+	color: #FEBEBF;
+	font-size: 150px;
+}
+
+section #testimoni .borbot{
+	background: #F15759;
+	width: 50px;
+	height: 4px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+section #testimoni .profil, section #testimoni .said{
+	text-align: center;
+}
+
+section #testimoni .profil .img img{
+	border-radius: 100%;
+	width: 125px;
+}
+
+section #testimoni .borbot2{
+	border-bottom: solid 4px #F0555D;
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+	
+section #testimoni .name{
+	margin-top: 10px;
+}
+
+section #testimoni .name span{
+	font-size: 16px;
+	color: #000;
+}
+
+section #testimoni .profesi span{
+	font-size: 15px;
+	color: #f46c70;
+}
+
+section #testimoni .said{
+	margin-top: 25px;
+	margin-bottom: 60px;
+}
+
+section #testimoni .said p{
+	font-size: 15px;
+	color: #6E6E6E;
+}
+
+section #testimoni .bulat{
+	border: solid 3px #f2565a;
+	border-radius: 100%;
+	padding: 3px 8px;
+}
+
+section #testimoni .carousel-control-prev-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2565a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	margin-top: 4px;
+}
+
+section #testimoni .carousel-control-next-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2565a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	margin-top: 4px;
+}
+
+/* APA KATA MEREKA TENTANG PANICMU ? (end) */
+
+/* BAGAIMANA MEMULAINYA ? (start) */
+
+section #download{
+	margin: 40px 0;
+}
+
+section #download .title h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 50px;
+	text-shadow: 0px 3px 2px #F09AA3;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+section #download .borbot{
+	background: #F2565A;
+	width: 50px;
+	height: 4px;
+	margin-top: 20px;
+	margin: 0 auto;
+}
+
+section #download .content{
+	margin-top: 60px;
+}
+
+section #download .content .word1 h1{
+	color: #F2575B;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+section #download .content .word2 p{
+	color: #6E6E6E;
+	font-size: 15px;
+}
+
+section #download .content .button .android{
+	float: left;
+	width: 170px;
+}
+
+section #download .content .button .ios{
+	width: 170px;
+	float: left;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+
+section #download .content .ilustrasi{
+	width: 500px;
+}
+
+/* BAGAIMANA MEMULAINYA ? (end) */
+
+/* KONTAK (start) */
+
+section #contact{
+	background: #FA696E;
+	width: 100%;
+	padding-top: 35px;
+	position: relative;
+}
+
+section #contact .title:after{
+	content: 'c o n t a c t';
+	text-shadow: none;
+	font-size: 90px;
+	position: absolute;
+	z-index: 1;
+	color: #F2565A;
+	text-transform: uppercase;
+	font-weight: bold;
+	right: 0px;
+	margin-top: 220px;
+}
+
+section #contact .title h3{
+	font-weight: bold;
+	color: #FFF;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-shadow: 0 3px 0 #F7454B;
+	text-align: center;
+}
+
+section #contact .borbot{
+	background: #FFF;
+	width: 50px;
+	height: 4px;
+	box-shadow: 0 3px 0 0 #F7454B;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+section #contact .content{
+	padding-bottom: 60px;
+	padding-top: 20px;
+}
+
+section #contact .contact .information{
+	margin-top: 35px;
+}
+
+section #contact .contact .information .icon-location, section #contact .contact .information .icon-phone, section #contact .contact .information .icon-email{
+	float: left;
+}
+
+section #contact .contact .information .icon-location i, section #contact .contact .information .icon-phone i, section #contact .contact .information .icon-email i{
+	color: #F9EC5F;
+	font-size: 20px;
+}
+
+section #contact .contact .information .content-location, section #contact .contact .information .content-phone, section #contact .contact .information .content-email{
+	margin-left: 33px;
+}
+
+section #contact .contact .information .content-location p, section #contact .contact .information .content-phone p, section #contact .contact .information .content-email a{
+	color: #FFF;
+	font-size: 15px;
+}
+
+section #contact .contact .information .content-email a:hover, section #contact .contact .information .content-email a:focus{
+	color: #F9EC60;
+	text-decoration: none;
+	transition: all .2s ease;
+}
+
+section #contact .contact .information .social-media{
+	margin-top: 20px;
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+
+section #contact .contact .information .social-media i{
+	background: rgba(255, 255, 255, 0.7);
+	font-size: 23px;
+	border-radius: 100%;
+	color: #FA696E;
+}
+
+section #contact .contact .information .social-media .facebook, section #contact .contact .information .social-media .twitter, section #contact .contact .information .social-media .instagram{
+	float: left;
+	margin-right: 12px;
+}
+
+section #contact .contact .information .social-media .facebook i{
+	padding: 7px 13px;
+}
+
+section #contact .contact .information .social-media .twitter i{
+	padding: 7.3px 8.3px;
+}
+
+section #contact .contact .information .social-media .instagram i{
+	padding: 7px 9px;
+}
+
+section #contact .contact .information .social-media .facebook i:hover, section #contact .contact .information .social-media .facebook i:focus{
+	background: #4267B2;
+	transition: all .2s ease;
+}
+
+section #contact .contact .information .social-media .twitter i:hover, section #contact .contact .information .social-media .twitter i:focus{
+	background: #1DA1F2;
+	transition: all .2s ease;
+}
+
+section #contact .contact .information .social-media .instagram i:hover, section #contact .contact .information .social-media .instagram i:focus{
+	background: linear-gradient(#AB30AC, #F79A4A);
+	transition: all .2s ease;
+}
+
+section #contact .enquire .form{
+	margin-top: 20px;
+}
+
+section #contact .enquire .form label{
+	font-size: 16px;
+	color: #FFF;
+}
+
+section #contact .enquire .form input[type="text"], section #contact .enquire .form textarea{
+	background: transparent;
+	border: none;
+	border-bottom: solid 1px #FFF;
+	width: 100%;
+	outline: none;
+	font-size: 15px;
+	color: #FFF;
+	margin-bottom: 12px;
+}
+
+section #contact .enquire .form button{
+	background: #F9EC5F;
+	border: none;
+	color: #FA696E;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 5px 20px;
+	cursor: pointer;
+	float: right;
+}
+
+section #contact .enquire .form button:hover, section #contact .enquire .form button:focus{
+	background: #FFF;
+	transition: all .2s ease;
+}
+
+/* KONTAK (end) */
+
+/* section (end) */
+
+/* footer (start) */
+
+footer{
+	width: 100%;
+	background: #F2565A;
+	height: 60px;
+	padding: 20px 0;
+}
+
+footer .copyright{
+	float: left;
+}
+
+footer .maker{
+	float: right;
+}
+
+footer .copyright p, footer .maker p{
+	color: #FFF;
+	font-size: 15px;
+}
+
+footer .maker a{
+	color: #FFF;
+	transition: color .2s ease;
+}
+
+footer .maker a:hover, footer .maker a:focus{
+	color: #F9EC5F;
+	text-decoration: none;
+}
+
+/* footer (start) */
+
+/* TABLET DISPLAY (start) */
+
+@media screen and (max-width: 768px){
+
+	/* header (start) */
+	
+	header .left{
+		float: none;
+	}
+
+	header .right{
+		float: none;
+	}
+
+	header .header-menu{
+		line-height: 90px;
+		height: 90px;
+	}
+
+	.header-menu-scroll{
+		line-height: 85px;
+		height: 85px;
+	}
+
+	header .logo{
+		width: 150px;
+	}
+
+	header nav ul li{
+		line-height: 25px;
+		text-align: center;	
+		width: 100%;
+	}
+
+	header nav ul li a:first-child{
+		padding-top: 15px;
+	}
+
+	header nav ul li a{
+		margin: 0;
+		font-size: 20px;
+		width: 100%;
+	  	display: inline-block;
+	  	vertical-align: middle;
+	  	-webkit-transform: perspective(1px) translateZ(0);
+	  	transform: perspective(1px) translateZ(0);
+	  	box-shadow: 0 0 1px transparent;
+	  	position: relative;
+	  	overflow: hidden;	  	
+	}
+	header nav ul li a:before{
+	  	content: "";
+	  	position: absolute;
+	  	z-index: -1;
+	  	left: 50%;
+	  	right: 50%;
+	  	bottom: 0;
+	  	background: #F2565A;
+	  	height: 3px;
+	  	-webkit-transition-property: left, right;
+	  	transition-property: left, right;
+	  	-webkit-transition-duration: 0.3s;
+	  	transition-duration: 0.3s;
+	  	-webkit-transition-timing-function: ease-out;
+	  	transition-timing-function: ease-out;
+	}
+	header nav ul li a:hover:before, header nav ul li a:focus:before, header nav ul li a:active:before, .active:before{
+	  	left: 0;
+	  	right: 0;
+	}
+
+	/* hamburger menu (start) */
+	
+	.burger{
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 35px;
+		z-index: 999;
+	}
+	.burger-menu:checked ~ .burger {
+	  	border-bottom: 6px solid transparent;
+	  	transition: border-bottom 0.8s ease-in-out;
+	 	-webkit-transition: border-bottom 0.8s ease-in-out;
+	}
+	
+	.burger-menu:checked ~ .burger:before {
+	    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+	    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);      
+	    transition: transform 0.5s ease-in-out;
+	    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+	 }
+
+	 .burger-menu:checked ~ .burger:after {
+	    transform: rotate(403deg) translateY(-6px) translateX(-6px); 
+	    -webkit-transform: rotate(403deg) translateY(-6px) translateX(-6px);       
+	    transition: transform 0.5s ease-in-out;
+	  	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	 }
+
+	.navigasi{
+		overflow: hidden;
+	  	max-height: 0;
+	  	position: absolute;
+	  	background: #fff;
+	  	height: auto;
+		left: 0;
+		right: 0;
+	  	transition: max-height 0.5s ease-in-out;
+	}
+
+	.burger-menu:checked ~ .navigasi{
+	 	max-height: 400px;
+	  	transition: max-height 0.5s ease-in-out;
+	}
+
+	/* hamburger menu (start) */
+
+	/* slide 1 (start) */
+
+	header .header-content .slide-pertama .content{
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	header .header-content .slide-pertama .title p{
+		font-size: 60px;
+		line-height: 62px;
+	}
+
+	header .header-content .slide-pertama .ilustrasi{
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	header .header-content .slide-pertama .ilustrasi img{
+		margin: 0;
+	}
+
+	/* slide 1 (end) */
+
+	/* slide 3 (start) */
+
+	header .header-content .slide-ketiga .ilustrasi{
+		padding-top: 130px;
+	}
+
+	/* slide 3 (end) */
+
+	/* header (end) */
+
+	/* section (start) */
+
+	/* APA ITU PANICMU ? (start) */
+
+	section #about{
+		padding: 30px 0;
+	}
+
+	section .triangle{
+		top: 110%;
+		left: calc(52% - .7rem);
+	}
+
+	section #about .title{
+		display: none;
+	}
+
+	section #about .title2{
+		display: block;
+	}
+
+	section #about .title2 h3{
+		color: #000;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 33px;
+		padding-bottom: 20px;
+		text-shadow: 2px 1px 1px #F2565A;
+		margin-bottom: 15px;
+	}
+
+	section #about .title2{
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	section #about .borbot{
+		display: none;
+	}
+
+	section #about .borbot2{
+		background: #F2565A;
+		width: 50px;
+		height: 4px;
+		margin: 0 auto;
+		margin-top: 10px;
+		display: block;
+	}
+
+	section #about .video{
+		box-shadow: -5px -4px 2px 5px #FFE9EB;
+		width: 80%;
+		margin: 50px auto 10px auto;
+	}
+
+	section #about .content p{
+		font-size: 19px;
+		text-align: center;
+	}
+
+	section .left{
+		padding-left: 0;
+	}
+
+	section .right{
+		padding-right: 0;
+	}
+
+	/* APA ITU PANICMU ? (end) */
+
+	/* KENAPA HARUS PANICMU ? (start) */
+
+	section #keunggulan .keunggulan-title h3{
+		margin-top: 50px;
+	}
+
+	section #keunggulan .keunggulan-content .icon{
+		margin-top: 70px;
+	}
+
+	section #keunggulan .keunggulan-content .two .icon{
+		width: 255px;
+	}
+
+	section #keunggulan .keunggulan-content .three .icon{
+		width: 193px;
+	}
+
+	section #keunggulan .keunggulan-content .six .icon{
+		width: 240px;
+	}
+
+	section #keunggulan .keunggulan-content .title h4{
+		font-size: 28px;
+		margin-top: 20px;
+	}
+
+	section #keunggulan .keunggulan-content .content p{
+		font-size: 19px;
+	}
+
+	/* KENAPA HARUS PANICMU ? (end) */
+
+	/* APA SAJA FITUR PANICMU ? (start) */
+
+	section #features .features-title h3{
+		font-size: 33px;
+	}
+
+	section #features .bg{
+		margin-top: 20px;
+	}
+
+	section #features .features-content .bg{
+		height: 235px;
+	}
+
+	section #features .features-content .icon{
+		margin-top: 12px;
+	}
+
+	section #features .features-content .pendek{
+		margin-top: 23px;
+	}
+
+	section #features .features-content .title{
+		height: 68px;
+		padding-top: 15px;
+	}
+
+	section #features .features-content .title h6{
+		font-weight: bold;
+		font-size: 20px;
+		color: #000;
+	}
+
+	section #features .features-content .tinggi .title{
+		padding-top: 29px;
+	}
+
+	section #features .features-content .content p{
+		font-size: 17px;
+	}
+
+	/* APA SAJA FITUR PANICMU ? (end) */
+
+	/* APA KATA MEREKA TENTANG PANICMU ? (start) */
+
+	section #testimoni .title h3{
+		font-size: 33px;
+	}
+
+	section #testimoni .title h3:before{
+		left: 5%;
+		font-size: 125px;
+		margin-top: 40px;
+	}
+
+	section #testimoni .title h3:after{
+		right: 5%;
+		font-size: 125px;
+		margin-top: 40px;
+	}
+
+	section #testimoni .profil .img img{
+		border-radius: 100%;
+		width: 125px;
+	}
+		
+	section #testimoni .name{
+		margin-top: 10px;
+	}
+
+	section #testimoni .name span{
+		font-size: 20px;
+	}
+
+	section #testimoni .profesi span{
+		font-size: 17px;
+	}
+
+	section #testimoni .said p{
+		font-size: 19px;
+	}
+
+	/* APA KATA MEREKA TENTANG PANICMU ? (end) */
+
+	/* BAGAIMANA MEMULAINYA ? (start) */
+
+	section #download .title h3{
+		font-size: 33px;
+	}
+
+	section #download .content{
+		margin-top: 40px;
+	}
+
+	section #download .content .word1 h1{
+		width: 75%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	section #download .content .word2 p{
+		margin-top: 15px;
+		font-size: 19px;
+		text-align: center;
+	}
+
+	section #download .content .button{
+		width: 55%;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	section #download .row{
+		margin: 0;
+	}
+
+	section #download .content .ilustrasi{
+		width: 500px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	/* BAGAIMANA MEMULAINYA ? (end) */
+
+	/* KONTAK (start) */
+
+	section #contact .title h3{
+		font-size: 33px;
+	}
+
+	section #contact .contact .information .icon-location i, section #contact .contact .information .icon-phone i, section #contact .contact .information .icon-email i{
+		font-size: 24px;
+	}
+
+	section #contact .contact .information .content-location p, section #contact .contact .information .content-phone p, section #contact .contact .information .content-email a{
+		font-size: 19px;
+	}
+
+	section #contact .contact .information .social-media{
+		display: flex;
+		justify-content: center;
+		float: none;
+		position: relative;
+		z-index: 2;
+		margin-top: 40px;
+	}
+
+	section #contact .contact .information .social-media i{
+		font-size: 26px;
+	}
+
+	section #contact .contact .information .social-media .facebook i{
+		padding: 7px 14px;
+	}
+
+	section #contact .contact .information .social-media .instagram i{
+		padding: 7px 10px;
+	}
+
+	section #contact .enquire .form label{
+		font-size: 19px;
+	}
+
+	section #contact .enquire .form input[type="text"], section #contact .enquire .form textarea{
+		font-size: 19px;
+	}
+
+	section #contact .enquire .form button{
+		font-size: 20px;
+		padding: 7px 30px;
+	}
+
+	section #contact .enquire .form .button{
+		display: flex;
+		justify-content: center;
+	}
+
+	section #contact .col-md-12{
+		padding: 0;
+	}
+
+	section #contact .row{
+		margin: 0;
+	}
+
+	/* KONTAK (end) */
+
+	/* section (end) */
+
+	/* footer (start) */
+	
+	footer{
+		width: 100%;
+		background: #F2565A;
+		height: auto;
+		padding: 20px 0;
+	}
+
+	footer .copyright{
+		float: none;
+		clear: both;
+		margin: 0;
+	}
+
+	footer .maker{
+		clear: both;
+		float: none;
+		margin: 0;
+	}
+
+	footer .copyright p, footer .maker p{
+		font-size: 19px;
+		text-align: center;
+		margin: 0;
+	}	
+
+	/* footer (start) */
+
+}
+
+/* TABLET DISPLAY (end) */
+
+/* SMARTPHONE DISPLAY (start) */
+
+@media screen and (max-width: 425px){
+
+	/* header (start) */
+
+	header .header-menu{
+		line-height: 80px;
+		height: 80px;
+	}
+
+	.header-menu-scroll{
+		line-height: 75px;
+		height: 75px;
+	}
+
+	header .logo{
+		width: 135px;
+	}
+
+	.burger {
+		border-bottom: 4px solid #000;
+	}
+
+	.burger:before {
+		border-bottom: 4px solid #000;        
+	}
+
+	.burger:after {
+		border-bottom: 4px solid #000;
+	}
+	
+	.burger{
+		top: 27px;
+	}
+
+	header .header-content .slide-pertama{
+		height: 575px;
+	}
+
+	header .header-content .slide-pertama .content{
+		padding-top: 70px;
+	}
+
+	header .header-content .slide-pertama .col-sm-12{
+		padding-right: 0;
+	}
+
+	header .header-content .slide-pertama .title p{
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+	header .header-content .slide-pertama .ilustrasi{
+		width: 400px;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	header .header-content .slide-kedua{
+		height: 575px;
+	}
+
+	header .header-content .slide-kedua .title{
+		padding-top: 90px;
+	}
+
+	header .header-content .slide-kedua .title h1{
+		font-size: 55px;
+	}
+
+	header .header-content .slide-kedua .ilustrasi{
+		width: 600px;
+		bottom: 55px;
+	}
+
+	header .header-content .slide-kedua .ilustrasi img{
+		width: 600px;
+	}
+	
+	header .header-content .slide-ketiga{
+		height: 575px;
+	}
+
+	/* header (end) */
+
+	/* APA ITU PANICMU ? (start) */
+
+	section #about{
+		padding: 30px 0;
+	}
+
+	section .triangle{
+		top: 105.5%;
+		left: calc(53.5% - .7rem);
+	}
+
+	section #about .title2 h3{
+		font-size: 23px;
+		margin-bottom: 0;
+	}
+
+	section #about .col-sm-12, section #keunggulan .col-sm-12, section #features .col-sm-12{
+		padding: 0;
+	}
+
+	section #about .row, section #keunggulan .row, section #features .row{
+		margin: 0;
+	}
+
+	section #about .borbot{
+		display: none;
+	}
+
+	section #about .borbot2{
+		margin-top: 0;
+	}
+
+	section #about .video{
+		box-shadow: -5px -4px 2px 5px #FFE9EB;
+		width: 80%;
+		margin: 50px auto 10px auto;
+	}
+
+	section #about .content p, section #keunggulan .keunggulan-content .content p, section #features .features-content .content p, section #testimoni .said p, section #download .content .word2 p, section #contact .contact .information .content-location p, section #contact .contact .information .content-phone p, section #contact .contact .information .content-email a, section #contact .enquire .form label, section #contact .enquire .form input[type="text"], section #contact .enquire .form textarea, footer .copyright p, footer .maker p{
+		font-size: 17px;
+	}
+
+	/* APA ITU PANICMU ? (end) */
+
+	/* KENAPA HARUS PANICMU ? (start) */
+
+	section #keunggulan .keunggulan-title h3, section #features .features-title h3, section #features .features-title h3, section #testimoni .title h3, section #download .title h3, section #contact .title h3{
+		font-size: 23px;
+	}
+
+	section #keunggulan .keunggulan-content .title h4{
+		font-size: 25px;
+	}
+
+	section #keunggulan .keunggulan-content .icon{
+		margin-top: 35px;
+	}
+
+	/* KENAPA HARUS PANICMU ? (end) */
+
+	/* APA SAJA FITUR PANICMU ? (start) */
+
+	section #features .features-content .bg{
+		height: 220px;
+	}
+
+	section #features .features-content .icon{
+		margin-top: 20px;
+	}
+
+	section #features .features-content .tinggi .title, section #features .features-content .pertama .title{
+		padding-top: 29px;
+	}
+
+	/* APA SAJA FITUR PANICMU ? (end) */
+
+	/* APA KATA MEREKA TENTANG PANICMU ? (start) */
+
+	section #testimoni .title h3:before{
+		left: 5%;
+		font-size: 125px;
+		margin-top: 67px;
+	}
+
+	section #testimoni .title h3:after{
+		right: 5%;
+		font-size: 125px;
+		margin-top: 40px;
+	}
+
+	section #testimoni .profil .img img{
+		border-radius: 100%;
+		width: 125px;
+	}
+		
+	section #testimoni .name{
+		margin-top: 10px;
+	}
+
+	section #testimoni .name span{
+		font-size: 18px;
+	}
+
+	section #testimoni .profesi span{
+		font-size: 15px;
+	}
+
+	/* APA KATA MEREKA TENTANG PANICMU ? (end) */
+
+	/* BAGAIMANA MEMULAINYA ? (start) */
+
+	section #download .content{
+		margin-top: 40px;
+	}
+
+	section #download .content .word1 h1{
+		width: 80%;
+		font-size: 30px;
+	}
+
+	section #download .content .button{
+		width: 75%;
+	}
+
+	section #download .content .button .android, section #download .content .button .ios{
+		width: 130px;
+	}
+
+	section #download .row{
+		margin: 0;
+	}
+
+	section #download .content .ilustrasi{
+		width: 400px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	/* BAGAIMANA MEMULAINYA ? (end) */
+
+	/* KONTAK (start) */
+
+	section #contact .contact .information .icon-location i, section #contact .contact .information .icon-phone i, section #contact .contact .information .icon-email i{
+		font-size: 24px;
+	}
+
+	section #contact .enquire .form button{
+		font-size: 18px;
+		padding: 7px 27px;
+	}
+
+	section #contact .title:after{
+		content: 'c o n t a c t';
+		text-shadow: none;
+		font-size: 50px;
+		position: absolute;
+		z-index: 1;
+		color: #F2565A;
+		text-transform: uppercase;
+		font-weight: bold;
+		right: 0px;
+		margin-top: 240px;
+	}
+
+	/* KONTAK (end) */
+}
+
+/* SMARTPHONE DISPLAY (end) */
